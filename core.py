@@ -32,7 +32,8 @@ def get_missing_answer(driver, question, answers):
         print("[?] Question:", question)
         print("[?] Answer:", get_answer_texts(driver)[new_answer - 1])
         print("[? | yN] -> ", end="")
-        if input().lower() == "y":
+        #if input().lower() == "y":
+        if True:
             answers[question] = get_answer_texts(driver)[new_answer - 1]
             save_answer_csv(answers)
             break # accept input
@@ -93,7 +94,10 @@ def load_question_database():
         answers_file = csv.reader(csv_file)
         answers = {}
         for answer in answers_file:
-            answers[answer[0]] = answer[1]
+            try:
+                answers[answer[0]] = answer[1]
+            except IndexError:
+                print(f"Bad CSV entry: `{answer}`")
         return answers
     return None
 
@@ -106,11 +110,18 @@ def main():
     quizzes = [
         "tenth-grade-vocabulary-trivia",
         "baseball-trivia",
-        "advanced-spelling-trivia",
         "ninth-grade-vocabulary-trivia",
         "landforms-trivia",
         "solar-system-trivia",
         "famous-world-leaders",
+        "weather-trivia",
+        "habitats-trivia",
+        "eleventh-grade-vocabulary-trivia",
+        "american-presidents-trivia",
+        "big-cats-trivia",
+        "heart-trivia",
+
+
 
     ]
 
