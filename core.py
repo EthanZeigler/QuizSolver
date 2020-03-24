@@ -120,6 +120,7 @@ def main():
         "american-presidents-trivia",
         "big-cats-trivia",
         "heart-trivia",
+        "state-animals-trivia",
 
 
 
