@@ -124,6 +124,13 @@ def main():
         "american-presidents-trivia",
         "big-cats-trivia",
         "heart-trivia",
+<<<<<<< HEAD
+=======
+        "state-animals-trivia",
+
+
+
+>>>>>>> 0e6a8bee25f50b0ae7e49d4de306a9e3af2e3168
     ]
 
     print("Which quiz? (or many by using commas)")
