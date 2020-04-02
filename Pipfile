@@ -8,6 +8,8 @@ autopep8 = "*"
 
 [packages]
 selenium = "*"
+pillow = "*"
+pytesseract = "*"
 
 [requires]
 python_version = "3.7"
