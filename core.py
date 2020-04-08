@@ -148,7 +148,7 @@ def main():
             print("[!] Crashed. The quiz might be done.")
 
         open_login_window(driver)
-        print("[i] All done! Press enter when you're done with the window.")
+        print("[i] All done! Press enter when you're ready for the next quiz (or to stop, if it's the last one)")
         input("[?] -> ...")
         driver.switch_to.default_content()
 
